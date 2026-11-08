@@ -1,0 +1,217 @@
+[
+  {
+    "path": "/aisi-design-preview/",
+    "title": "Smarter operations. A safer tomorrow.",
+    "type": "Home"
+  },
+  {
+    "path": "/aisi-design-preview/solutions/",
+    "title": "Our solutions",
+    "type": "Solutions"
+  },
+  {
+    "path": "/aisi-design-preview/solutions/ai-enterprise/",
+    "title": "Enterprise AI integration",
+    "type": "Solution"
+  },
+  {
+    "path": "/aisi-design-preview/solutions/ai-agents/",
+    "title": "AI agents",
+    "type": "Solution"
+  },
+  {
+    "path": "/aisi-design-preview/solutions/ai-video-analytics/",
+    "title": "Video analytics",
+    "type": "Solution"
+  },
+  {
+    "path": "/aisi-design-preview/industries/",
+    "title": "Industries",
+    "type": "Industries"
+  },
+  {
+    "path": "/aisi-design-preview/industries/construction/",
+    "title": "Construction & infrastructure",
+    "type": "Industry"
+  },
+  {
+    "path": "/aisi-design-preview/industries/manufacturing/",
+    "title": "Manufacturing & industrial",
+    "type": "Industry"
+  },
+  {
+    "path": "/aisi-design-preview/industries/facilities-management/",
+    "title": "Facilities management",
+    "type": "Industry"
+  },
+  {
+    "path": "/aisi-design-preview/industries/logistics/",
+    "title": "Logistics & supply chain",
+    "type": "Industry"
+  },
+  {
+    "path": "/aisi-design-preview/industries/government/",
+    "title": "Government & public sector",
+    "type": "Industry"
+  },
+  {
+    "path": "/aisi-design-preview/case-studies/",
+    "title": "Case studies",
+    "type": "Case studies"
+  },
+  {
+    "path": "/aisi-design-preview/case-studies/hkia-airport/",
+    "title": "Foiling Global Smuggling Operations with Intelligent AI Tracking",
+    "type": "Case study"
+  },
+  {
+    "path": "/aisi-design-preview/case-studies/wugang-smart-city/",
+    "title": "Revolutionising Urban Management with Unified AI Video Analytics",
+    "type": "Case study"
+  },
+  {
+    "path": "/aisi-design-preview/case-studies/cyclect-dormitory/",
+    "title": "Enhancing Dormitory Safety & Security with AI Video Analytics",
+    "type": "Case study"
+  },
+  {
+    "path": "/aisi-design-preview/case-studies/certificate-management/",
+    "title": "Streamlining Compliance with AI-Driven Certificate Management",
+    "type": "Case study"
+  },
+  {
+    "path": "/aisi-design-preview/case-studies/inspection-reports/",
+    "title": "Accelerating Safety Compliance with AI-Powered Inspection Reporting",
+    "type": "Case study"
+  },
+  {
+    "path": "/aisi-design-preview/case-studies/ai-traffic-monitoring-whatsapp-broadcast/",
+    "title": "Automating 24/7 Public Traffic Reporting with an Autonomous AI Agent",
+    "type": "Case study"
+  },
+  {
+    "path": "/aisi-design-preview/case-studies/ai-opsdesk-for-insurance-brokerage/",
+    "title": "AI OpsDesk: Running Enquiry-to-Renewal on One Case Record",
+    "type": "Case study"
+  },
+  {
+    "path": "/aisi-design-preview/case-studies/ai-site-assist-for-construction/",
+    "title": "AI Site Assist: Running Multi-Site Construction Ops from One Chat",
+    "type": "Case study"
+  },
+  {
+    "path": "/aisi-design-preview/about/",
+    "title": "About AISI",
+    "type": "Company"
+  },
+  {
+    "path": "/aisi-design-preview/news/",
+    "title": "News",
+    "type": "Company"
+  },
+  {
+    "path": "/aisi-design-preview/faq/",
+    "title": "Frequently asked questions",
+    "type": "Resources"
+  },
+  {
+    "path": "/aisi-design-preview/blog/",
+    "title": "Insights & articles",
+    "type": "Insights"
+  },
+  {
+    "path": "/aisi-design-preview/staff-adopted-ai-company-didnt-singapore-smes/",
+    "title": "Your Staff Already Adopted AI. Your Company Didn’t.",
+    "type": "Article"
+  },
+  {
+    "path": "/aisi-design-preview/domain-knowledge-ai-partner-singapore-smes/",
+    "title": "Your SME Already Has Half the AI Capability It Needs",
+    "type": "Article"
+  },
+  {
+    "path": "/aisi-design-preview/customer-data-chatgpt-pdpa-singapore-smes/",
+    "title": "Can Your Employees Put Customer Data into ChatGPT? A Practical PDPA Guide for Singapore SMEs",
+    "type": "Article"
+  },
+  {
+    "path": "/aisi-design-preview/does-spending-more-on-ai-necessarily-mean-better-business-results/",
+    "title": "Does spending more on AI necessarily mean better business results?",
+    "type": "Article"
+  },
+  {
+    "path": "/aisi-design-preview/running-out-of-ai-tokens-quickly-heres-why-and-how-to-save-on-token-usage/",
+    "title": "Running out of AI tokens quickly? Here’s why and how to save on token usage.",
+    "type": "Article"
+  },
+  {
+    "path": "/aisi-design-preview/the-ai-that-doesnt-just-talk-it-acts-and-that-should-make-you-slightly-uncomfortable/",
+    "title": "The AI That Doesn’t Just Talk — It Acts. And That Should Make You Slightly Uncomfortable.",
+    "type": "Article"
+  },
+  {
+    "path": "/aisi-design-preview/your-team-is-spending-half-their-day-on-work-that-shouldnt-require-them/",
+    "title": "Your Team Is Spending Half Their Day on Work That Shouldn’t Require Them",
+    "type": "Article"
+  },
+  {
+    "path": "/aisi-design-preview/your-cctv-system-is-watching-it-just-isnt-thinking/",
+    "title": "Your CCTV System Is Watching. It Just Isn’t Thinking.",
+    "type": "Article"
+  },
+  {
+    "path": "/aisi-design-preview/are-you-ai-ready-a-comprehensive-guide-for-businesses-in-singapore/",
+    "title": "Are You AI-Ready? A Comprehensive Guide for Businesses in Singapore",
+    "type": "Article"
+  },
+  {
+    "path": "/aisi-design-preview/the-complete-guide-to-ai-adoption-for-singapore-businesses-2026-edition/",
+    "title": "The Complete Guide to AI Adoption for Singapore Businesses (2026 Edition)",
+    "type": "Article"
+  },
+  {
+    "path": "/aisi-design-preview/why-2026-is-the-year-singapore-businesses-must-get-ai-ready/",
+    "title": "Why 2026 Is the Year Singapore Businesses Must Get AI‑Ready",
+    "type": "Article"
+  },
+  {
+    "path": "/aisi-design-preview/ai-in-2026-transforming-business-operations-for-smes/",
+    "title": "AI in 2026: Transforming Business Operations for SMEs",
+    "type": "Article"
+  },
+  {
+    "path": "/aisi-design-preview/top-5-ai-trends-in-2025-every-sme-owner-should-know/",
+    "title": "Top 5 AI Trends in 2025 (Every SME Owner Should Know)",
+    "type": "Article"
+  },
+  {
+    "path": "/aisi-design-preview/the-rise-of-ai-agents-transforming-business-operations/",
+    "title": "The Rise of AI Agents: Transforming Business Operations",
+    "type": "Article"
+  },
+  {
+    "path": "/aisi-design-preview/ai-hallucination-is-real-so-what-can-you-do-about-it/",
+    "title": "AI Hallucination Is Real. So what can you do about it?",
+    "type": "Article"
+  },
+  {
+    "path": "/aisi-design-preview/the-hidden-risks-of-using-ai/",
+    "title": "The Hidden Risks of Using AI",
+    "type": "Article"
+  },
+  {
+    "path": "/aisi-design-preview/how-singapore-companies-are-using-ai-to-save-time-in-everyday-office-work/",
+    "title": "How Singapore Companies Are Using AI to Save Time in Everyday Office Work",
+    "type": "Article"
+  },
+  {
+    "path": "/aisi-design-preview/contact/",
+    "title": "Contact AISI",
+    "type": "Contact"
+  },
+  {
+    "path": "/aisi-design-preview/privacy-policy/",
+    "title": "Privacy policy & legal disclaimer",
+    "type": "Legal"
+  }
+]
