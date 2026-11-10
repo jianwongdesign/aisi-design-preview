@@ -6,7 +6,14 @@ function closeMenu() { menu?.setAttribute('aria-expanded', 'false'); if (mobileN
 menu?.addEventListener('click', () => { const open = menu.getAttribute('aria-expanded') !== 'true'; menu.setAttribute('aria-expanded', String(open)); mobileNav.hidden = !open; });
 $$('.mobile-nav a').forEach(a => a.addEventListener('click', closeMenu));
 window.matchMedia('(min-width: 981px)').addEventListener('change', e => { if (e.matches) closeMenu(); });
-$$('.nav-dropdown').forEach(d => d.addEventListener('toggle', () => { if (d.open) $$('.nav-dropdown').forEach(other => { if (other !== d) other.open = false; }); }));
+$$('.nav-dropdown').forEach(d => {
+  d.addEventListener('toggle', () => { if (d.open) $$('.nav-dropdown').forEach(other => { if (other !== d) other.open = false; }); });
+  d.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && d.open) { d.open = false; $('summary',d).focus(); e.stopPropagation(); }
+    if (e.key === 'ArrowDown' && e.target === $('summary',d)) { e.preventDefault(); d.open = true; $('a',d)?.focus(); }
+  });
+  d.addEventListener('focusout', e => { if (!d.contains(e.relatedTarget)) d.open = false; });
+});
 document.addEventListener('click', e => { if (!e.target.closest('.nav-dropdown')) $$('.nav-dropdown').forEach(d => d.open = false); if (!e.target.closest('.site-header')) closeMenu(); });
 document.addEventListener('keydown', e => { if (e.key === 'Escape') { const searchDialog = $('#search-dialog'); if (searchDialog?.open) { searchDialog.close(); e.preventDefault(); } if (menu?.getAttribute('aria-expanded') === 'true') { closeMenu(); menu.focus(); } $$('.nav-dropdown[open]').forEach(d => { d.open = false; $('summary', d).focus(); }); } });
 
@@ -84,6 +91,20 @@ $$('.desktop-nav a, .mobile-nav a').forEach(link => {
     link.closest('.nav-dropdown')?.classList.add('is-current');
   }
 });
+
+// This discourages casual copying; it is not access control or DRM.
+if (document.documentElement.hasAttribute('data-copy-protected')) {
+  const editable = target => target instanceof Element &&
+    (target.closest('input,textarea') || target.isContentEditable);
+  for (const type of ['copy','cut','contextmenu','dragstart']) {
+    document.addEventListener(type, event => {
+      if (editable(event.target)) return;
+      // Keyboard clipboard events can target the document in some browsers.
+      if ((type === 'copy' || type === 'cut') && editable(document.activeElement)) return;
+      event.preventDefault();
+    });
+  }
+}
 
 // Reading navigation follows the section currently in view, without moving focus.
 const sectionLinks = $$('.section-nav a[href^="#"]');
