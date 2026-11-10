@@ -37,8 +37,19 @@ $$('.search-toggle').forEach(b => b.addEventListener('click', () => { renderSear
 $('.close-search')?.addEventListener('click', () => dialog.close());
 $('#site-search')?.addEventListener('input', renderSearch);
 dialog?.addEventListener('click', e => { if (e.target === dialog) { const r = dialog.getBoundingClientRect(); if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) dialog.close(); } });
-$$('[data-filter]').forEach(b => b.addEventListener('click', () => { const filter = b.dataset.filter; $$('[data-filter]').forEach(x => x.setAttribute('aria-pressed', String(x === b))); $$('[data-category]').forEach(card => card.hidden = filter !== 'all' && !card.dataset.category.includes(filter)); const count = $$('[data-category]').filter(c => !c.hidden).length; if ($('#filter-status')) $('#filter-status').textContent = `${count} ${count === 1 ? 'story' : 'stories'}`; }));
-$('#article-search')?.addEventListener('input', e => { const query = e.target.value.trim().toLowerCase(); const cards = $$('[data-article]'); cards.forEach(c => c.hidden = !c.textContent.toLowerCase().includes(query)); const count = cards.filter(c => !c.hidden).length; $('#article-count').textContent = `${count} ${count === 1 ? 'article' : 'articles'}`; });
+// Explicit count attributes keep layout updates reliable after hidden-state changes.
+// CSS structural selectors provide the same initial layout when JavaScript is off.
+function updateCardLayouts() {
+  $$('.story-grid,.article-grid').forEach(grid => {
+    const count = [...grid.children].filter(card => !card.hidden).length;
+    grid.dataset.cardCount = String(count);
+    grid.dataset.cardPairs = String(count > 0 && count % 2 === 0);
+    grid.dataset.cardTrios = String(count > 0 && count % 3 === 0);
+  });
+}
+updateCardLayouts();
+$$('[data-filter]').forEach(b => b.addEventListener('click', () => { const filter = b.dataset.filter; $$('[data-filter]').forEach(x => x.setAttribute('aria-pressed', String(x === b))); $$('[data-category]').forEach(card => card.hidden = filter !== 'all' && !card.dataset.category.includes(filter)); const count = $$('[data-category]').filter(c => !c.hidden).length; if ($('#filter-status')) $('#filter-status').textContent = `${count} ${count === 1 ? 'story' : 'stories'}`; updateCardLayouts(); }));
+$('#article-search')?.addEventListener('input', e => { const query = e.target.value.trim().toLowerCase(); const cards = $$('[data-article]'); cards.forEach(c => c.hidden = !c.textContent.toLowerCase().includes(query)); const count = cards.filter(c => !c.hidden).length; $('#article-count').textContent = `${count} ${count === 1 ? 'article' : 'articles'}`; updateCardLayouts(); });
 $('#contact-form')?.addEventListener('submit', e => {
   e.preventDefault();
   const data = new FormData(e.currentTarget);
